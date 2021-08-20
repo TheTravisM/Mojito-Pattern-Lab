@@ -1,0 +1,12 @@
+{
+  "buttonTag":true,
+  "linkTag":false,
+  "id": "id",
+  "prependHtml": "",
+  "appendHtml": "",
+  "title": "title",
+  "text": "Button",
+  "linkUrl": "",
+  "classModifier": "c-btn c-btn--text c-btn--text-pdf",
+  "url" : "www.link.pdf"
+}

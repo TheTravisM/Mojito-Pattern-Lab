@@ -1,0 +1,65 @@
+
+/* -- --------------------  -- */
+/* -- [ COMPONENTS : LOGO ] -- */
+/* -- -------------------  -- */
+
+.c-logo { }
+
+
+.c-logo--header {
+    line-height: 0;
+    .c-logo {
+        &_link {
+            padding: 24px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        &_svg {
+            width: 175px;
+            height: 40px;
+
+            path {
+                fill: var(--color-almost-black, #1D1D1E);
+            }
+        }
+    }
+}
+/* Desktop and Up */
+@media (min-width: 576px) {
+    .c-logo--header {
+        align-items: flex-end;
+        align-self: flex-end;
+        height: auto;
+        margin: 0;
+        .c-logo {
+            &_link {
+                padding: 0;
+            }
+        }
+    }
+}
+
+/*-- Footer Logo -- */
+.c-logo--footer {
+    margin-bottom: 30px;
+    .c-logo {
+        &_svg {
+            width: 202px;
+            height: 44px;
+            path {
+                fill: var(--color-primary-blue, #003865);
+            }
+        }
+    }
+}
+
+/* Footer Logo Desktop and Up */
+@media (min-width: 576px) {
+    .c-logo--footer {
+        margin-bottom: 60px;
+        .c-logo {
+            &_svg { }
+        }
+    }
+}

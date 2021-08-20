@@ -1,0 +1,8 @@
+<svg version="1.1" id="icon-primary-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 18 15" style="enable-background:new 0 0 18 15;" xml:space="preserve">
+<style type="text/css">
+	svg#icon-primary-arrow .arrow-icon{fill:none;stroke:#81B39B;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<line id="Path" class="arrow-icon" x1="1" y1="8" x2="16" y2="7.9"/>
+<polyline id="Line" class="arrow-icon" points="10,1 17,7.5 10,14 "/>
+</svg>

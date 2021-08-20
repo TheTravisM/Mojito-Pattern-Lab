@@ -1,0 +1,39 @@
+
+<article class="c-media-block {{mediaBlockClassModifier}} {{backgroundColor}}">
+
+    {{#if mediaBlockImgSrc}}
+        <aside class="c-media-block_aside">
+            <picture class="c-media-block_picture">
+                <source media="{{media-width}}" srcset="{{largeImgSrc}}"/>
+                <source media="{{media-width}}" srcset="{{smallImgSrc}}"/>
+                <img class="c-media-block_img" src="{{mediaBlockImgSrc}}" alt="{{mediaBlockImgAlt}}" loading="lazy"/>
+            </picture>
+        </aside>
+    {{/if}}
+
+    <section class="c-media-block_body">
+        {{#if title}}
+            <header class="c-media-block_header">
+                <{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}} class="c-media-block_title">
+                    {{title}}
+                </{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}}>
+            </header>
+        {{/if}}
+
+        {{#if htmlText}}
+            <div class="c-media-block_copy">
+                {{{htmlText}}}
+            </div>
+        {{/if}}
+
+        {{#if buttons}}
+            <footer class="c-media-block_footer">
+                <a class="c-btn {{buttonClass}}" href="{{linkUrl}}">
+                    {{buttonText}}
+                </a>
+            </footer>
+        {{/if}}
+
+    </section>
+</article>
+

@@ -1,0 +1,12 @@
+{
+  "blockModifier": "",
+  "backgroundColor": "",
+  "title": "This is the title",
+  "headingLevel": "h6",
+  "htmlText": "This is the content",
+  "buttons": true,
+  "buttonClass": "c-btn--primary",
+      "buttonText": "button",
+  "linkUrl": "google.com",
+  "linkText": "Link Text"
+}

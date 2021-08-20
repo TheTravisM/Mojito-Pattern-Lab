@@ -1,0 +1,43 @@
+
+/* -- ----------------------  -- */
+/* -- [ UTILITIES : PADDING ] -- */
+/* -- ----------------------  -- */
+
+.u-padding--0 { padding: var(--spacing-0, 0px) !important ; }
+.u-padding--extra-small { padding: var(--spacing-x-small, 8px) !important ; }
+.u-padding--small { padding: var(--spacing-small, 16px) !important ; }
+.u-padding--medium { padding: var(--spacing-medium, 32px) !important ; }
+.u-padding--large { padding: var(--spacing-large, 72px) !important ; }
+.u-padding--extra-large { padding: var(--spacing-x-large, 120px) !important ; }
+
+/*-- padding Top --*/
+.u-padding-top--0 { padding-top: var(--spacing-0, 0px) !important ; }
+.u-padding-top--extra-small { padding-top: var(--spacing-x-small, 8px) !important ; }
+.u-padding-top--small { padding-top: var(--spacing-small, 16px) !important ; }
+.u-padding-top--medium { padding-top: var(--spacing-medium, 32px) !important ; }
+.u-padding-top--large { padding-top: var(--spacing-large, 72px) !important ; }
+.u-padding-top--extra-large { padding-top: var(--spacing-x-large, 120px) !important ; }
+
+/*-- padding Bottom --*/
+.u-padding-bottom--0 { padding-bottom: var(--spacing-0, 0px) !important ; }
+.u-padding-bottom--extra-small { padding-bottom: var(--spacing-x-small, 8px) !important ; }
+.u-padding-bottom--small { padding-bottom: var(--spacing-small, 16px) !important ; }
+.u-padding-bottom--medium { padding-bottom: var(--spacing-medium, 32px) !important ; }
+.u-padding-bottom--large { padding-bottom: var(--spacing-large, 72px) !important ; }
+.u-padding-bottom--extra-large { padding-bottom: var(--spacing-x-large, 120px) !important ; }
+
+/*-- Padding Left --*/
+.u-padding-left--0 { padding-left: var(--spacing-0, 0px) !important ; }
+.u-padding-left--extra-small { padding-left: var(--spacing-x-small, 8px) !important ; }
+.u-padding-left--small { padding-left: var(--spacing-small, 16px) !important ; }
+.u-padding-left--medium { padding-left: var(--spacing-medium, 32px) !important ; }
+.u-padding-left--large { padding-left: var(--spacing-large, 72px) !important ; }
+.u-padding-left--extra-large { padding-left: var(--spacing-x-large, 120px) !important ; }
+
+/*-- Padding Right --*/
+.u-padding-right--0 { padding-right: var(--spacing-0, 0px) !important ; }
+.u-padding-right--extra-small { padding-right: var(--spacing-x-small, 8px) !important ; }
+.u-padding-right--small { padding-right: var(--spacing-small, 16px) !important ; }
+.u-padding-right--medium { padding-right: var(--spacing-medium, 32px) !important ; }
+.u-padding-right--large { padding-right: var(--spacing-large, 72px) !important ; }
+.u-padding-right--extra-large { padding-right: var(--spacing-x-large, 120px) !important ; }

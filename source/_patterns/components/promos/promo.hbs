@@ -1,0 +1,37 @@
+
+<article class="c-promo {{mediaAlign}} {{classModifier}} {{backgroundColor}}">
+    <aside class="c-promo_aside">
+        <picture class="c-promo_picture">
+            <source media="{{media-width}}" srcset="{{largeImgSrc}}"/>
+            <source media="{{media-width}}" srcset="{{smallImgSrc}}"/>
+            <img class="c-promo_img" src="{{imgSrc}}" alt="{{imgAltText}}" loading="lazy"/>
+        </picture>
+    </aside>
+    <section class="c-promo_body">
+        {{#if title}}
+            <header class="c-promo_header">
+                <{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}} class="c-promo_title">
+                    {{title}}
+                </{{#if headingLevel}}{{headingLevel}}{{else}}h4{{/if}}>
+            </header>
+        {{/if}}
+
+
+
+        {{#if htmlText}}
+            <div class="c-promo_copy">
+                {{{htmlText}}}
+            </div>
+        {{/if}}
+
+        {{#if buttons}}
+            <footer class="c-promo_footer">
+                <a class="c-btn {{buttonClass}}" href="{{url}}" role="link">
+                    {{buttonText}}
+                </a>
+            </footer>
+        {{/if}}
+
+    </section><!-- End Promo Body -->
+</article>
+

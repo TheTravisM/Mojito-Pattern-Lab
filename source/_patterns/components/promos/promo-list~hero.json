@@ -1,0 +1,21 @@
+{
+  "prependHtml" : "<main role='main'>",
+  "appendHtml" : "</main>",
+  "containerModifier": "l-container--full",
+  "backgroundColor": "u-bg--spearmint-lite",
+  "promo-list" : [
+    {
+      "classModifier": "c-promo--hero",
+      "mediaAlign": "c-promo--media-left",
+      "imgSrc": "https://news.cengage.com/wp-content/uploads/2019/06/MHansen-2019-bust-smaller.png",
+      "imgAltText": "this is the alt text",
+      "headingLevel": "h3",
+      "title": "Leadership",
+      "htmlText": "<h4><q>Our culture is built to create leaders at all levels who make decisions with real impact.</q></h4><p><cite>Brave New World</cite></p>",
+      "buttons": true,
+      "buttonClass": "c-btn--secondary",
+      "buttonText": "meet our leadership",
+      "linkUrl": "google.com"
+    }
+  ]
+}

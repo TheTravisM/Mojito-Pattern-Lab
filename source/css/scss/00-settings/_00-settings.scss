@@ -1,0 +1,22 @@
+/*------------------------------------*/
+/* -- SETTINGS -----------------------*/
+/*------------------------------------*/
+
+/*
+
+settings: Global variables, site-wide settings, config switches, etc.
+
+* SETTINGS
+* Config...............Project-level configuration and feature switches.
+* Core.................inuitcss’ core and setup settings.
+* Global...............Project-wide variables and settings.
+
+*/
+
+
+@import '_breakpoints';
+@import '_colors';
+@import '_fonts';
+@import '_spacing';
+@import '_typography';
+@import '_z-index';

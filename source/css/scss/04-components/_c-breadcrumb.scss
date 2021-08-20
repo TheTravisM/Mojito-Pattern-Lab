@@ -1,0 +1,31 @@
+
+/* -- --------------------------  -- */
+/* -- [ COMPONENTS : BREADCRUMB ] -- */
+/* -- --------------------------  -- */
+
+.c-breadcrumb {
+  max-width: 1080px;
+  margin: 52px auto 32px;
+  display: flex;
+  justify-content: left;
+}
+.c-breadcrumb_list {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.c-breadcrumb_list-item { }
+.c-breadcrumb_link {
+  color: var(--color-primary-blue, #003865);
+  font-weight: 400;
+  &:hover {
+    color: var(--color-primary-blue, #003865);
+  }
+}
+.c-breadcrumb_label { }
+
+/* Add a slash symbol (/) before/behind each list item */
+.c-breadcrumb_list .c-breadcrumb_list-item+.c-breadcrumb_list-item:before {
+  margin: 0 6px 0 8px;
+  content: "/";
+}
