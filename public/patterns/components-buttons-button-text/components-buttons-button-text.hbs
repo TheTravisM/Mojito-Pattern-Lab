@@ -1,0 +1,45 @@
+
+<!--/* https://codepen.io/JackSamurai/pen/qBqbvmK?editors=1100 */-->
+
+
+{{#if buttonTag }}
+    <button class="{{ classModifier }}"
+        {{#if id}}id="{{id}}"{{/if}}
+        {{#if url}}href="{{ url }}"{{/ if }}
+        {{#if title}}title="{{ title }}"{{/if}}
+        type="button">
+        {{#if prependHtml}}
+            {{{prependHtml}}}
+        {{/if}}
+
+        {{#if text }}
+            {{ text }}
+        {{/ if }}
+
+        {{#if appendHtml }}
+            {{{appendHtml}}}
+        {{/ if }}
+
+    </button><!-- end c-btn -->
+{{/if}}
+
+
+{{#if linkTag }}
+    <a {{#if url}}href="{{ url }}"{{/ if }}
+        {{#if id}}id="{{id}}"{{/if}}
+        class="{{ classModifier }}"
+        role="link">
+        {{#if prepend}}
+            {{{prepend}}}
+        {{/if}}
+
+        {{#if text }}
+            {{ text }}
+        {{/ if }}
+
+        {{#if apend }}
+            {{{apend}}}
+        {{/ if }}
+
+    </a><!-- end c-btn -->
+{{/if}}

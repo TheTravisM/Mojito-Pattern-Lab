@@ -1,0 +1,39 @@
+/*------------------------------------*\
+    #LISTS
+\*------------------------------------*/
+
+/**
+ * 1) List base styles
+ */
+
+/**
+ * Remove list styles from unordered and ordered lists
+ */
+
+ol, ul {
+  list-style: none;
+}
+
+main {
+  ol, ul {
+    list-style: none;
+    margin-bottom: var(--spacing-small, 16px);
+  }
+
+  li {
+    font-size: var(--p-font-size, 16px);
+    line-height: var(--p-line-height, 25px);
+    margin-bottom: var(--spacing-extra-small, 16px);
+  }
+}
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+/**
+ * Button and submit inputs reset
+ * 1) These should be styled using c-btn
+ */
+button {
+  cursor: pointer;
+}

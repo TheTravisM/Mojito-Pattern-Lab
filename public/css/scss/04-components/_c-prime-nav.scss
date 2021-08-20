@@ -1,0 +1,185 @@
+
+/* -- ---------------------------------------  -- */
+/* -- [ COMPONENTS : Header Primary Navigation -- */
+/* -- ---------------------------------------  -- */
+
+.c-primary-nav {
+  padding: 0 0 24px 0;
+
+  &_list {
+    display: flex;
+    flex-direction: column;
+  }
+  &_list li[class$="list-item"] {
+    flex: auto;
+    background-color: #F7F7F7;
+  }
+  &_link {
+    margin-left: 24px;
+    text-transform: uppercase;
+  }
+  &_tab-btn::after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    height: 10px;
+    line-height: 62px;
+    width: 10px;
+    top: 0;
+    margin-bottom: 2px;
+    margin-left: 24px;
+    border-style: solid;
+    border-color: var(--color-primary-blue, #003865);
+    border-width: 2px 2px 0 0;
+    transform: rotate(45deg);
+  }
+  &_back-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 40px;
+      height: 1px;
+      margin-right: 8px;
+      border-style: solid;
+      border-width: 0 0 2px 0;
+      border-color: var(--color-primary-blue, #003865);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      height: 10px;
+      line-height: 62px;
+      width: 10px;
+      left: 0;
+      border-style: solid;
+      border-color: var(--color-primary-blue, #003865);
+      border-width: 0 0 2px 2px;
+      transform: rotate(45deg);
+    }
+  }
+  &_link,
+  &_dropdown-link {
+    padding: 0 24px;
+    display: inline-flex;
+    position: relative;
+    font-size: 20px;
+    line-height: 62px;
+    align-items: center;
+    font-weight: 600;
+    color: var(--color-primary-blue, #003865);
+    border:0;
+    background: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  &_dropdown-list {
+    top: 0;
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 48px;
+    background-color: #F7F7F7;
+    transform: translateX(100%);
+    transition: all .25s ease-in-out;
+    z-index: 1;
+    &--active {
+      transform: translateX(0);
+    }
+  }
+  &_dropdown-list-item {
+    display: flex;
+    flex-direction: column;
+  }
+  &_dropdown-link {
+    margin-left: 0;
+  }
+}
+
+/* -- Nav Order  --*/
+// Small devices (landscape phones, 768px and up)
+@media (min-width: 768px) {
+  .c-primary-nav {
+    padding: 0;
+    align-self: flex-end;
+    max-width: 740px;
+    width: 100%;
+    &_list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &_list-item {
+      position: relative;
+      background-color: #FFF;
+    }
+    &_link {
+      line-height: 40px;
+      height: 40px;
+      color: var(--color-almost-black, #1D1D1E);
+      padding: 12px;
+      margin-left: 0;
+      &:hover {
+        background-color: rgba(0,45,75,0.10);
+      }
+    }
+    &_tab-btn:hover::after { }
+    &_tab-btn::after {
+      margin-left: 12px;
+      border-color: var(--color-almost-black, #1D1D1E);
+      transform: rotate(135deg);
+    }
+    &_link--home,
+    &_back-btn {
+      display: none;
+    }
+    &_dropdown-list {
+      min-height: inherit;
+      max-height: 0;
+      min-width: 245px;
+      width: auto;
+      padding: 0;
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      overflow: hidden;
+      transform: inherit;
+      top: 40px;
+    }
+    &_dropdown-list-item {
+      background-color: #FFF;
+    }
+    &_dropdown-link {
+      display: inline-flex;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 30px;
+      height: auto;
+      margin: 12px 12px;
+      padding: 0 12px;
+      &:hover {
+        color: var(--color-almost-black, #1D1D1E);
+        background-color: rgba(0,45,75,0.10);
+      }
+    }
+    &_list-item:hover .c-primary-nav_dropdown-list,
+    &_dropdown-list--active {
+      box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.10);
+      max-height: 100vh;
+      padding: 12px 0;
+      background-color: #FFF;
+    }
+    &_list-item:hover .c-primary-nav_tab-btn,
+    &_tab-btn:hover,
+    &_tab-btn--active {
+      background-color: rgba(0,45,75,0.10);
+    }
+  }
+}
+

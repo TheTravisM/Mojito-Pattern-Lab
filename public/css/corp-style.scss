@@ -1,0 +1,33 @@
+// Namespace (o-, c-, u-, t-, _-, js-, qa-) Reference : http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/
+// BEMIT: http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further
+// BEM: http://webdesign.tutsplus.com/articles/an-introduction-to-the-bem-methodology--cms-19403
+// ITCSS: https://www.youtube.com/watch?v=1OKZOV-iLj4
+
+
+// 00 SETTINGS: Global variables, config switches */
+@import 'scss/00-settings/00-settings';
+
+// 01 GENERIC: Ground-zero styles (normalize, resets, box-sizing) */
+@import 'scss/01-generic/00-generic';
+
+// 02 BASE: Unclassed HTML elements (Type selectors) */
+@import 'scss/02-base/00-base';
+
+// 03 Layout: Unclassed HTML elements (Type selectors) */
+@import 'scss/03-layouts/00-layout';
+
+// 04 COMPONENTS: Designed components
+// c-: Signify that something is a Component. This is a concrete, implementation-specific piece of UI. All of the changes you make to its styles should be detectable in the context you’re currently looking at. Modifying these styles should be safe and have no side effects. */
+// TODO: remove imports after corp is built
+@import 'scss/04-components/00-components';
+
+// 05 UTILITIES / TRUMPS: Helpers and overrides
+// u-: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like SUIT. */
+@import 'scss/05-utilities/00-utilities';
+
+// 06 PAGES / TRUMPS: Helpers and overrides
+// u-: Signify that this class is a Utility class. It has a very specific role (often providing only one declaration) and should not be bound onto or changed. It can be reused and is not tied to any specific piece of UI. You will probably recognise this namespace from libraries and methodologies like SUIT. */
+// Do not import pages
+// Link to the page specifically
+// TODO: remove imports after corp is built
+//@import 'scss/06-pages/00-pages';

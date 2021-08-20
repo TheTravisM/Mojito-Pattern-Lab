@@ -1,0 +1,62 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../js/primary-nav.js"></script>
+
+<!-- Header Navigation-->
+<nav id="primary-navigation" class="c-primary-nav" aria-label="main">
+    <ul class="c-primary-nav_list">
+    {{# PrimaryNavigation }}
+        <li class="c-primary-nav_list-item {{ dropdown-class }}">
+            {{#if buttonTag }}
+                <button
+                    id="{{ listHeader }}-tab-btn"
+                    class="c-primary-nav_link c-primary-nav_tab-btn {{ styleModifier }}"
+                    data-toggle="tab"
+                    role="tab"
+                    aria-controls="{{ listHeader }}-tabpanel"
+                    aria-selected="false"
+                >
+                    {{ listHeader }}
+                </button>
+            {{/ if }}
+
+            {{#if linkTag }}
+                <a href="{{ url }}"
+                   class="c-primary-nav_link {{ styleModifier }}"
+                   role="link">
+                    {{ listHeader }}
+                </a>
+            {{/ if }}
+
+            {{#if dropdown-list }}
+                <ul class="c-primary-nav_dropdown-list"
+                    id="{{ listHeader }}-tabpanel"
+                    tabindex="0"
+                    role="tabpanel"
+                    aria-labelledby="{{ listHeader }}-tab-btn"
+                    aria-hidden="true">
+                    <button
+                            class="c-primary-nav_back-btn"
+                            data-toggle="tab"
+                            role="tab"
+                            aria-controls="{{ listHeader }}-tabpanel"
+                            aria-selected="false"
+                    >
+                        Back
+                        <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                    </button>
+                    {{# dropdown-list }}
+                         <li class="c-primary-nav_dropdown-list-item {{ primary-nav_item--modifier }}">
+                            <a class="c-primary-nav_dropdown-link"
+                               href="{{url}}"
+                               {{#if role}}role="{{ role }}"{{/if}}>
+                                {{label}}
+                            </a>
+                        </li>
+                    {{/ dropdown-list }}
+                </ul>
+            {{/ if }}<!-- End dropdown list -->
+        </li>
+    {{/ PrimaryNavigation }}
+    </ul>
+</nav>
+

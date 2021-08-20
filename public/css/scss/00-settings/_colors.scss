@@ -1,0 +1,70 @@
+
+/* -- --------------------- -- */
+/* -- [ SETTINGS : COLORS ] -- */
+/* -- --------------------- -- */
+
+:root {
+  /* -- Primary -- */
+  --color-almost-black: #1D1D1E;
+  --color-white: #FFF;
+  --color-primary-blue: #003865;
+
+  /* -- Highlights -- */
+  --color-plum: #3D405B;
+  --color-straw: #F2CD8F;
+  --color-sand: #F4F1DE;
+  --color-terra-cotta: #E07A5F;
+  --color-spearmint: #81B39B;
+
+  /* -- Neutrals -- */
+  --color-light-gray: #F7F7F7;
+  --color-light-plum: #F9F9FB;
+  --color-spearmint-lite: #EAF9F2;
+  --color-stone: #E5EAED;
+  --color-grahite: #7D7D7D;
+
+  /* -- Cengage Logo Colors -- */
+  --color-blue-1: var(--color-primary-blue, #003865);
+  --color-blue-2: #006298;
+  --color-blue-3: #0085CA;
+  --color-blue-4: #00A9E0;
+  --color-blue-5: #71C5E8;
+
+  /* -- Utility Colors -- */
+  --color-focus-border: #90Cef1;
+  --color-focus-background: #90Cef1;
+  --color-success-background: #dcedc2;
+  --color-success-text: #4a7628;
+  --color-error-background: #f4b6b1;
+  --color-error-text: #b10f00;
+
+  /* -- Global Text Color -- */
+  --text-color-dark: var(--color-almost-black, #1D1D1E);
+  --text-color-light: var(--color-white, #FFF);
+  --text-color-blue: var(--color-primary-blue, #003865);
+
+  /* -- Link Color -- */
+  --color-link: var(--color-almost-black, #1D1D1E);
+  --color-link-hover: var(--color-primary-blue, #003865);
+  --color-link-active: var(--color-primary-blue, #003865);
+  --color-link-visited: var(--color-almost-black, #1D1D1E);
+
+  /* -- Buttons -- */
+
+  /*-- Forms -- */
+  --color-form-text: var();
+  --color-form-background: var();
+  --color-form-border: var();
+
+  --color-form-text-focus: var();
+  --color-form-background-focus: var(--color-focus-background, #90Cef1);
+  --color-form-border-focus: var(--color-focus-border, #90Cef1);
+
+  --color-form-text-error: var(--color-error-text, #b10f00);
+  --color-form-background-error: var(--color-error-background, #f4b6b1);
+  --color-form-border-error: var();
+
+  --color-form-label: var();
+  --color-form-info: var();
+  --color-form-placeholder-text: var();
+}

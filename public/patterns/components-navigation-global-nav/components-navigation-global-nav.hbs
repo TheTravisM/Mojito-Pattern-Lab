@@ -1,0 +1,107 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../../js/global-nav.js"></script>
+<!-- GLOBAL Navigation -->
+{{# GlobalNavigation}}
+<nav id="c-global-navigation" class="c-global-nav">
+    <ul class="c-global-nav_list">
+        {{# global-nav-list}}
+            <li id={{id}}-list-item class="c-global-nav_list-item c-{{id}}">
+                {{#if button }}
+                    <button
+                        id="{{ id }}-tab-btn"
+                        class="c-global-nav_link c-global-nav_tab-btn c-{{id}}_btn"
+                        data-toggle="tab"
+                        role="tab"
+                        aria-controls="{{ id }}-tabpanel"
+                        aria-selected="false">
+                        {{ listHeader }}
+                        {{# if icon }}
+                            <span class="c-btn_icon {{ icon-modifier }}">
+                                {{icon-image}}
+                            </span>
+                        {{/ if }}
+                    </button>
+                {{/ if }}
+
+                {{#if link }}
+                    <a href="{{ url }}"
+                       id="{{ id }}-tab-btn"
+                       class="c-global-nav_link {{ class-modifier }}"
+                       role="link">
+                        {{ listHeader }}
+                    </a>
+                {{/ if }}
+
+                {{#if dropdown-list }}
+                    <ul class="c-global-nav_dropdown-list c-{{id}}_list {{ class-modifier }}"
+                        id="{{ id }}-tabpanel"
+                        tabindex="0"
+                        role="tabpanel"
+                        aria-labelledby="{{ id }}-tab-btn"
+                        aria-hidden="true">
+                        <button
+                                class="c-global-nav_back-btn"
+                                data-toggle="tab"
+                                role="tab"
+                                aria-controls="{{ id }}-tabpanel"
+                                aria-selected="false"
+                        >
+                            Back
+                            <span class="u-screen-reader-text">Toggle {{ listHeader }} Menu</span>
+                        </button>
+                        {{# dropdown-list }}
+                            <li class="c-global-nav_dropdown-list-item c-{{id}}_dropdown-list-item"
+                                role="listitem">
+                                {{# if heading}}
+                                    <{{heading-level}}
+                                        id=""
+                                        class="c-global-nav_dropdown-list-item c-global-nav_dropdown-title {{class-modifier}}"
+                                    >
+
+                                        {{ label }}
+                                    </{{heading-level}}>
+                                {{/if}}
+
+                                {{#if link}}
+                                    <a id="{{ id }}"
+                                       class="c-global-nav_dropdown-list-link {{ class-modifier }} c-{{id}}_dropdown-list-link"
+                                       href="{{url}}"
+                                       role="link">
+                                        {{ label }}
+                                    </a>
+                                {{/if}}
+
+                                {{#if location-dropdown-list }}
+                                    <ul id="{{ id }}"
+                                        class="c-global-nav_list {{ class-modifier }}"
+                                        tabindex="0"
+                                        role="tabpanel"
+                                        aria-labelledby="{{ id }}-tab-btn"
+                                        aria-hidden="true">
+                                        {{# location-dropdown-list }}
+                                        <li class="c-global-nav_list-item"
+                                            id=""
+                                            role="listitem"
+                                        >
+                                            {{#if link}}
+                                                <a id="{{ id }}"
+                                                   class="c-global-nav_list-link {{ class-modifier }}"
+                                                   href="{{url}}"
+                                                   role="link">
+                                                    {{ label }}
+                                                </a>
+                                            {{/if}}
+                                        </li>
+                                        {{/ location-dropdown-list }}
+                                    </ul>
+                                {{/if}} <!--location-dropdown-list-->
+                            </li>
+                        {{/ dropdown-list }}
+                    </ul>
+                {{/ if }}<!-- End dropdown list -->
+            </li><!-- END c-global-nav_list-item -->
+        {{/ global-nav-list }}
+    </ul>
+</nav>
+{{/ GlobalNavigation}}
+<!-- END GLOBAL Navigation -->
